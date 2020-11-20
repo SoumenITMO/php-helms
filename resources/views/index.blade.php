@@ -1,5 +1,4 @@
 <html>
-
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	</head>
@@ -11,7 +10,7 @@ Please enter your name and pick the Sectors you are currently involved in.
 	<form action="saveuser" method="POST">
 		
 		Name: 
-		<input type="text" name="username" value="{{ $formdata["username"] }}" required>
+		<input type="text" name="username" value={{ $formdata["username"] }} required>
 		@if($errors->has('username'))
 				<div style="color:red">{{ $errors->first('username') }}</div>
 		@endif
